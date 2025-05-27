@@ -1,21 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    margin: 0;
+    background-image: url(https://c0.wallpaperflare.com/preview/928/349/127/indonesia-wisata-gunung-kelud-roamer-roam.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 225, 0.2);
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+}
+
+/* Navigation */
 nav {
     position: relative;
+    left: 0px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
     width: 100%;
-    background: rgba(61, 61, 133, 0.95);
-    padding: 1rem;
+    padding-right: 0px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.89);
-    z-index: 1000;
-    bottom: 10px;
-    right: 10px;
+    bottom: 25px;
+    right: 15px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 98%;
+}
+
+/* Typography */
+section,
+p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+section,
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Form Inputs */
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Button Group */
+.button-group {
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.button-group button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* button click */
+.btn-konversi:active {
+    background-color: green;
+    color: white;
+}
+
+.btn-reset:active {
+    background-color: red;
+    color: white;
+}
+
+.btn-reverse:active {
+    background-color: white;
+    color: black;
+    border: 1px solid #999;
 }
 
 
+/* Code font */
+.rumus-content {
+    font-family: 'Courier New', Courier, monospace;
+}
 
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.89);
+    }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: sans-serif;
-    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    nav {
+        font-size: 18px;
+        padding: 0.75rem;
+        bottom: 25px;
+        right: 5px;
+        width: 90%;
+    }
+
+    section,
+    p {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="number"],
+    textarea {
+        width: 100%;
+    }
+
+    .button-group button {
+        font-size: 13px;
+        padding: 5px 8px;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
 }
